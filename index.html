@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,68 +7,96 @@
   </head>
   <body>
 
-    <header class="main-header">
+    <header class="header">
 
-      <section class="main-header-top">
+      <aside class="header-aside">
 
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="80" height="30" alt="Логотип ТЕХНОМАРТ">
-        </a>
+        <div  style="width: 220px; height: 47px; background: red url('img/ТЕХНОМАРТ.png') no-repeat center center;">
+        </div>
 
-        <ul class="site-navigation">
-          <li><a href="poisk.html"><span>ic*n</span><span>Поиск:</span></a></li>
-          <li><a href="info.html">Закладок: 0</a></li>
-          <li><a href="info.html">Корзин: 0</a></li>
-          <li><a href="info.html">Оформить заказ</a></li>
+
+        <form class="" action="/action_page.php">
+          <button type="submit">
+            <img src="img/icon-search.svg" alt="search"  height="10" width="12">
+          </button>
+          <input type="text" placeholder="Поиск:" name="search">
+        </form>
+
+          
+        <ul class="header-aside-buttons">
+          <li><a href="info.html">
+              <img src="img/icon-bookmark.svg" alt="bookmark"  height="12" width="16">
+              <span>Закладок: </span>
+              <span>0</span>
+          </a></li>
+          <li><a href="info.html">
+             <img src="img/cart-icon.svg" alt="cart"  height="12" width="16">
+              <span>Корзин: </span>
+              <span>0</span>
+          </a></li>
+          <li><a href="info.html">
+              <span>Оформить заказ</span>
+          </a></li>
         </ul>
-      </section>
+        
+      </aside>
 
-      <section class="main-header-botton">
 
-        <ul>                
-          <li class="h2-block">
+      <section class="header-section">
+
+        <ul>
+          <li class="header-section-block">
+            <h1>
+              Интернет-магазин строительных материалов и инструментов для ремонта
+            </h1>
+          </li>
+
+          <li class="header-section-block">
             <p>
-              Интернет-магазин строительных материалов и инструментов для ремонта                    
+              <img src="img/icon-phone.svg" alt="phone"  height="12" width="16">
+              <span>+7 (812) 555-05-55</span>
             </p>
           </li>
 
-          <li class="h2-block">
-            <p>
-              <span>ic*n</span><span>+7 (812) 555-05-55</span>
-            </p>
-          </li>
-
-          <li class="h2-block">
-            <ul class="user-navigation">
-              <li class="login-link">
-                <span>ic*n</span><span>Войти</span>
+          <li class="header-section-block">
+            
+            <ul class="header-section-user-navigation">
+              <li class="user-login">
+             <img src="img/icon-login.svg" alt="login"  height="12" width="16">
+                <span>Войти</span>
               </li>
-              <li class="user-registration">Регистрация</li>
+              <li class="user-registration">
+                Регистрация
+              </li>
             </ul>
-          </li>            
+            
+          </li>
         </ul>
 
 
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="info.html">Спецпредложения</a></li>
-            <li><a href="info.html">Доставка</a></li>
+        <nav class="header-main-navigation">
+          <ul>
+            <li><a href="#">            Главная</a></li>
+            <!--<li><a href="index.html">Главная</a></li>-->
+            <li><a href="about.html">   Компания</a></li>
+            <li><a href="catalog.html"> Каталог</a></li>
+            <li><a href="news.html">    Новости</a></li>
+            <li><a href="info.html">    Спецпредложения</a></li>
+            <li><a href="info.html">    Доставка</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
+
       </section>
 
     </header>
+
 
     <main class="container">
       КАТАЛОГ
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
       ФУТЕР
     </footer>
 
