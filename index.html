@@ -3,97 +3,151 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
+    <title>Интернет-магазин «Техномарт»</title>
+    <style>
+      .company-logo {}
+      .company-logo div {
+        width: 220px;
+        height: 47px;
+        background: #ee3643;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*box-shadow: inset 0 -30px 30px -30px #344952;*/
+        box-shadow: inset 0 -20px 20px -20px #000;
+        }
+    </style>
   </head>
   <body>
 
-    <header class="header">
+    <header class="main-header">
 
-      <aside class="header-aside">
+      <section class="logo-search-login">
 
-        <div  style="width: 220px; height: 47px; background: red url('img/ТЕХНОМАРТ.png') no-repeat center center;">
-        </div>
+        <h3 class="visually-hidden">
+          Логотип компании, Общий поиск по сайту, Логин
+        </h3>
+
+        <a class="company-logo"  href="index.html">
+          <div>
+            <img src="img/logo-technomart.svg"
+                 alt="Логотип интернет-магазин Техномарт" height="18" width="110">
+          </div>
+        </a>
 
 
-        <form class="" action="/action_page.php">
+        <form class="search-form" action="/action_page.php" method="get">
           <button type="submit">
             <img src="img/icon-search.svg" alt="search"  height="10" width="12">
+            <span class="visually-hidden">Поиск</span>
           </button>
           <input type="text" placeholder="Поиск:" name="search">
         </form>
 
-          
-        <ul class="header-aside-buttons">
-          <li><a href="info.html">
-              <img src="img/icon-bookmark.svg" alt="bookmark"  height="12" width="16">
-              <span>Закладок: </span>
+
+        <ul class="general-user-info">
+          <li><a class="user-bookmark" href="user-bookmark.html">
+              <img src="img/icon-bookmark.svg" alt="Закладки"  height="12" width="16">
+              <span>Закладки:&nbsp;</span>
               <span>0</span>
           </a></li>
-          <li><a href="info.html">
-             <img src="img/cart-icon.svg" alt="cart"  height="12" width="16">
-              <span>Корзин: </span>
+          <li><a class="user-korzina" href="user-korzina.html">
+             <img src="img/cart-icon.svg" alt="Корзина"  height="12" width="16">
+              <span>Корзина:&nbsp;</span>
               <span>0</span>
           </a></li>
-          <li><a href="info.html">
+          <li><a class="user-create-order" href="user-create-order.html">
               <span>Оформить заказ</span>
           </a></li>
         </ul>
-        
-      </aside>
-
-
-      <section class="header-section">
-
-        <ul>
-          <li class="header-section-block">
-            <h1>
-              Интернет-магазин строительных материалов и инструментов для ремонта
-            </h1>
-          </li>
-
-          <li class="header-section-block">
-            <p>
-              <img src="img/icon-phone.svg" alt="phone"  height="12" width="16">
-              <span>+7 (812) 555-05-55</span>
-            </p>
-          </li>
-
-          <li class="header-section-block">
-            
-            <ul class="header-section-user-navigation">
-              <li class="user-login">
-             <img src="img/icon-login.svg" alt="login"  height="12" width="16">
-                <span>Войти</span>
-              </li>
-              <li class="user-registration">
-                Регистрация
-              </li>
-            </ul>
-            
-          </li>
-        </ul>
-
-
-        <nav class="header-main-navigation">
-          <ul>
-            <li><a href="#">            Главная</a></li>
-            <!--<li><a href="index.html">Главная</a></li>-->
-            <li><a href="about.html">   Компания</a></li>
-            <li><a href="catalog.html"> Каталог</a></li>
-            <li><a href="news.html">    Новости</a></li>
-            <li><a href="info.html">    Спецпредложения</a></li>
-            <li><a href="info.html">    Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
 
       </section>
+
+
+      <section class="general-company-info">
+
+        <h1 class="visually-hidden">
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </h1>
+
+        <div class="short-company-info">
+          <aside class="full-name">
+            <p>
+              Интернет-магазин строительных материалов и инструментов для ремонта 
+            </p>
+          </aside>
+
+          <section class="phone-address">
+            <h3 class="visually-hidden">Наш телефон и Наш адрес</h3>
+            <p class="phone">
+              <img src="img/icon-phone.svg" alt="Телефон магазина"  height="12" width="16">
+              <span class="visually-hidden">Наш телефон</span>
+              +7 (812) 555-05-55
+            </p>
+            <p class="post-address">
+              <span class="visually-hidden">Наш адрес</span>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </section>
+
+          <section class="user-login-registration">
+            <h3 class="visually-hidden">Вход и регистрация для посетителей</h3>
+            <ul>
+              <li class="user-login">
+                <a href="user-login.html">
+                  <img src="img/icon-login.svg" alt="Вход для пользователя"  height="12" width="16">
+                  Войти
+                </a>
+              </li>
+
+              <li class="user-registration">
+                <a href="user-registration.html">
+                  Регистрация
+                </a>
+              </li>
+            </ul>
+          </section>
+          
+        </div>
+      </section>
+
+      <nav class="site-navigation">
+        <ul>
+          <li><a href="#">            Главная</a></li>
+          <li><a href="about.html">   Компания</a></li>
+          <li><a href="catalog.html"> Каталог</a></li>
+          <li><a href="news.html">    Новости</a></li>
+          <li><a href="special.html"> Спецпредложения</a></li>
+          <li><a href="logistik.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
 
     </header>
 
 
     <main class="container">
-      КАТАЛОГ
+
+      <section>
+        <h2 class="visually-hidden">Мы предлагаем</h2>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">товары каталог</h2>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">производители каталог</h2>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">подробнее о сервисах и доставке</h2>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">подробнее о компании и контакты</h2>
+      </section>
+
     </main>
 
     <footer class="footer">
