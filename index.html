@@ -4,19 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Техномарт»</title>
-    <style>
-      .company-logo {}
-      .company-logo div {
-        width: 220px;
-        height: 47px;
-        background: #ee3643;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*box-shadow: inset 0 -30px 30px -30px #344952;*/
-        box-shadow: inset 0 -20px 20px -20px #000;
-        }
-    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
@@ -95,7 +84,7 @@
             <ul>
               <li class="user-login">
                 <a href="user-login.html">
-                  <img src="img/icon-login.svg" alt="Вход для пользователя"  height="12" width="16">
+                  <img src="img/icon-login.svg" alt="Вход для пользователя" height="12" width="16">
                   Войти
                 </a>
               </li>
@@ -147,6 +136,60 @@
       <section>
         <h2 class="visually-hidden">подробнее о компании и контакты</h2>
       </section>
+      
+      
+      
+      <section class="modal write-us">
+        
+        <h2 class="visually-hidden">Написать нам</h2>
+        
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+
+        <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">          
+            
+          <div>
+            <label for="in-name">Ваше имя:</label>
+            <br>
+            <input id="in-name" type="text" name="in-name"
+                   value="" placeholder="Имя Фамилия">            
+          </div>
+          
+          
+          <div>
+            <label for="in-email">Ваш e-mail:</label>
+            <br>
+            <input id="in-email" type="email" name="in-email"
+                   value="" placeholder="email@example.com">
+          </div>
+            
+
+          <div>
+            <label for="tx-text">Текст письма:</label>
+            <br>
+            <textarea id="tx-text" rows="4" cols="50" placeholder="В свободной форме"></textarea>
+          </div>
+            
+          <button class="button" type="submit">Отправить</button>
+        </form>        
+      </section>
+      
+      
+      
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Где наш офис</h2>      
+        
+        <button class="modal-close" type="button">
+          Закрыть
+        </button>
+        
+        <p>
+          <img src="img/map.jpg" width="780"
+          alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+      </section>
+      
 
     </main>
 
