@@ -1,5 +1,280 @@
-.company-logo {}
-.company-logo div {
+body {
+  margin:  0;
+  
+  font-family: Cuprum, PT-Sans, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: uppercase;
+  
+  color: #000;
+  background-color: #fff;
+  
+  /*font-weight: bold;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.main-header {  /*============================================================*/
+  /*color: #fff;*/
+  position: relative;
+  background-color: #f3f7f8;
+}
+
+
+.logo-search-login   ul {
+  list-style: none;
+}
+
+.logo-search-login, .inpt-search
+{
+  position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  color: #555;
+  border: none;  
+  background-color: #293449;
+}
+
+
+.search-form > label
+{
+  display: inline-block; 
+  width: 17px; height: 17px;
+  padding-right:  14px;
+}
+
+.icon-search {  /*============================================================*/
+  /*display: inline-block;  for <div>*/
+  background-color: #293449;
+  background-image: url('../img/icon-search_realy_SVG_1.svg');
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+  vertical-align: top;
+  /*margin-right:  14px;*/
+}
+
+.icon-search:hover
+{
+  background-color: #293449;
+  background-image: url('../img/icon-search_realy_SVG_2.svg');
+  background-repeat: no-repeat;
+}
+
+.icon-search:active
+{
+  background-color: #293449;
+  background-image: url('../img/icon-search_realy_SVG_3.svg');
+  background-repeat: no-repeat;
+}
+
+
+.inpt-search::placeholder {
+  color: #fff;
+}
+
+.inpt-search:hover
+{
+  color: #fff;
+  background-color: #212a3a;
+}
+
+.inpt-search:focus
+{
+  color: #000;
+  background-color: #fff;
+}
+
+/*
+AHTUNG! ===============================
+.icon-search:active --- 2019-02-16 Eto tol_ko cherez JScript -----
+{
+  background-color: #fff;
+  background-image: url('../img/icon-search_realy_SVG_4.svg');
+  background-repeat: no-repeat;
+} =====================================
+*/
+
+/*
+AHTUNG! ===============================
+V Chrome, NO working !!! ZARABOTALO -- pomenial poriadok pravil sm. stroki 72-85
+                       ================
+*/
+.inpt-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+
+.inpt-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa;
+}
+
+.inpt-search::-webkit-input-placeholder { /* Edge */
+  color: #aaa;
+}
+
+.inpt-search::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaa;
+}
+
+/*
+AHTUNG! ===============================
+V Chrome, NO working !!! ZARABOTALO -- pomenial poriadok pravil sm. stroki 72-85
+                       ================
+*/
+:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*.inpt-search:hover::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+/*.inpt-search:hover::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+}
+
+.inpt-search:hover:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.inpt-search:hover::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+
+/* general-user-info /==========================================================*/
+
+.general-user-info li {
+  padding-left: 0px;
+}
+
+.general-user-info span{
+  margin:  0;
+  padding: 0;
+  color: #ddd;
+  /*background-color: #293449;*/
+}
+
+/* user-bookmark {} /==========================================================*/
+
+.user-bookmark::before
+{
+  content: url('../img/icon-bookmark_realy_SVG_2.svg');
+  vertical-align: middle;
+  padding-right:  14px;
+  opacity: 0.3;
+}
+
+.user-bookmark:hover  span   { color: #fff;  }
+.user-bookmark:active span   { opacity: 0.5; }
+.user-bookmark:hover::before { opacity: 1; }
+.user-bookmark:active::before{ opacity: 0.5}
+
+/* user-korzina {} ===========================================================*/
+.user-korzina::before
+{
+  content: url('../img/icon-cart_realy_SVG_2.svg');
+  vertical-align: middle;
+  padding-right: 14px;
+  opacity: 0.3;
+}
+
+.user-korzina:hover  span   { color: #fff;  }
+.user-korzina:active span   { opacity: 0.5; }
+.user-korzina:hover::before { opacity: 1; }
+.user-korzina:active::before{ opacity: 0.5; }
+
+
+
+/* user-create-order {}  =====================================================*/
+.user-create-order {
+  width: 150px;
+  height: 42px;
+  background: #63a63e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.user-create-order:hover  { color: #fff;    background-color: #5fbb2d; }
+.user-create-order:active { color: #949aa4; background-color: #518534; }
+
+
+
+.short-company-info {
+  text-transform: none;
+  /*color: red;*/
+}
+
+.full-name-company > p {
+  color: red;
+  background-color: #f3f7f8; /*#f1f5f7*/
+  font-style: italic;
+}
+
+.phone { 
+  color: red;
+  background-color: #f3f7f8; /*#f1f5f7*/
+  border: 2px solid #fff;
+}
+
+.phone img {
+  padding-right: 40px;
+}
+
+.post-address { 
+  color: #32425c;
+  background-color: #f3f7f8; /*#f1f5f7*/
+}
+
+.user-login-registration ul {
+  list-style: none;
+}
+
+.user-login-registration li,
+.user-login-registration a  {
+  color: black;
+  background-color: white;
+}
+
+.user-login-registration a:hover,
+.user-login-registration a:focus {
+  color: red;
+}
+.user-login-registration a:active {
+  color: #f1f5f7;
+}
+
+/* user-login {}  /*==========================================================*/
+
+.user-login::before
+{
+  content: url('../img/icon-login_1.svg');
+  vertical-align: middle;
+  padding-right: 14px;
+}
+
+.user-login:hover span  { color: red; }
+.user-login:active span { color: #f1f5f7; }
+
+.user-login:hover::before
+{
+  content: url('../img/icon-login_2.svg');
+  vertical-align: middle;
+}
+
+.user-login:active::before
+{
+  content: url('../img/icon-login_3.svg');
+  vertical-align: middle;
+}
+
+/* company-logo {} ==============================*/
+
+.company-logo div
+{
   width: 220px;
   height: 47px;
   background: #ee3643;
@@ -8,4 +283,302 @@
   align-items: center;
   /*box-shadow: inset 0 -30px 30px -30px #344952;*/
   box-shadow: inset 0 -20px 20px -20px #000;
+}
+
+.company-logo div:hover { background: #ca2c37;}
+
+.company-logo div:active{ background-color: #ba2732; }
+
+
+  .modal
+ ,.visually-hidden
+  {    
+    /*
+        Lekcia-5 === Zadanie-12 === Punkt 01 === modal-section unvisible !
+    */ 
+    display: none;
   }
+  
+  /*
+  FONT RULE   ===  "Cuprum"
+  */  
+  
+  @font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bold-webfont.woff2')             format('woff2');
+  src: url('../../fonts/Font_Cuprum_WOFF/cuprum-bold-webfont.woff')           format('woff');
+  font-weight: bold;
+  font-style:  bold;
+  }
+  
+  @font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-italic-webfont.woff2')           format('woff2');
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-italic-webfont.woff')            format('woff');
+  font-weight: italic;
+  font-style:  italic;
+  }
+  
+  @font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bolditalic-webfont.woff2')       format('woff2');
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bolditalic-webfont.woff')        format('woff');
+  font-weight: bolditalic;
+  font-style:  bolditalic;
+  }
+  
+  @font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-regular-webfont.woff2')          format('woff2');
+  src: url('../fonts/Font_Cuprum_WOFF/cuprum-regular-webfont.woff')           format('woff');
+  font-weight: normal;
+  font-style:  normal;
+  }
+  
+  /*
+  FONT RULE ===  "PT-Sans"
+  */  
+  
+  @font-face {
+  font-family: PT-Sans;
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bold-webfont.woff2')       format('woff2');
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bold-webfont.woff')        format('woff');
+  font-weight: bold;
+  font-style:  bold;
+  }
+  
+  @font-face {
+  font-family: PT-Sans;
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-italic-webfont.woff2')     format('woff2');
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-italic-webfont.woff')      format('woff');
+  font-weight: italic;
+  font-style:  italic;
+  }
+  
+  @font-face {
+  font-family: PT-Sans;
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bolditalic-webfont.woff2') format('woff2');
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bolditalic-webfont.woff')  format('woff');
+  font-weight: bolditalic;
+  font-style:  bolditalic;
+  }
+  
+  @font-face {
+  font-family: PT-Sans;
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-regular-webfont.woff2')    format('woff2');
+  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-regular-webfont.woff')     format('woff');
+  font-weight: normal;
+  font-style:  normal;
+  }
+  
+.site-navigation   /*=========================================================*/
+{
+  position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #32425c;
+  border: none;  
+  box-shadow: inset 0 -20px 20px -20px #000;
+}
+
+.site-navigation ul
+{
+  list-style: none;
+}
+
+.site-navigation a { color: white; }
+
+
+.site-navigation li:hover
+{
+  color: #fff;
+  background-color: #293449;
+  /*background-color: grey;*/
+}
+
+.site-navigation li:active a
+{
+  color: rgba(255,255,255,0.8);
+  background-color: #293449;
+}
+
+
+footer { text-transform: none; }
+
+.review-company
+{
+  color: #fff;
+  background-color: #32425c;
+}
+
+footer .company-logo div
+{
+  width: 220px;
+  height: 68px;
+  background: #ee3643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 -20px 20px -20px #000;
+}
+
+footer .post-address { 
+  color: inherit;
+  background-color: inherit; /*#f1f5f7*/
+  border: none;
+}
+
+footer .site-navigation   /*=========================================================*/
+{
+  position: relative;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  box-shadow: none;
+}
+
+footer .site-navigation ul
+{
+  list-style: none;
+}
+
+footer .li-wight a
+{ 
+  color: #fff;
+  background-color: inherit;
+}
+
+footer .li-gold  a
+{ 
+  color: #ffda96;
+  background-color: inherit;
+}
+
+footer .site-navigation li:hover a
+{
+  text-decoration: underline solid; 
+}
+
+footer .site-navigation li:active a
+{
+  text-decoration: none; 
+  opacity: 0.5;
+}
+
+.copyright-soc-seti  /*=======================================================*/
+{
+  color: #fff;
+  background-color: #293449;
+}
+
+/*.copyright*/
+
+.soc-seti div
+{
+  display: inline-block;
+  width: 42px;
+  height: 42px;  
+  /*background-origin: border-box;*/
+  background-origin: content-box;
+  background-clip:   content-box; 
+  background-color:  #212a3a;
+  border-radius:     50%;  
+}
+
+.soc-seti div:hover,
+.soc-seti div:active { background-color: red; }
+
+.vkontakte
+{
+  box-sizing: border-box;
+  background-image: url('../img/icon-vk.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.facebook
+{ 
+  box-sizing: border-box;
+  background-image: url('../img/icon-fb.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.instagram
+{
+  box-sizing: border-box;
+  background-image: url('../img/icon-insta.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.copyright-soc-seti a span
+{
+  color: #fff;
+  background-color: inherit;
+}
+
+.copyright-soc-seti a::after
+{
+  content: "(" attr(href) ")";
+  
+  color: #ffd180;
+  background-color: inherit;
+}
+
+.copyright-soc-seti a:hover   span  { color: #fff; }
+.copyright-soc-seti a:active  span  { color: #fff; }
+
+.copyright-soc-seti a:hover::after  { color: #ffd180; }
+.copyright-soc-seti a:active::after { color: red; }
+
+
+.user-person-info ul
+{
+  list-style: none;
+}
+
+.user-profile li,
+.user-profile a
+{
+  color: black;
+  background-color: white;
+}
+
+.user-name::before
+{
+  content: url('../img/icon-user.svg');
+  vertical-align: middle;
+  padding-right: 14px;
+  opacity: 0.5;
+}
+
+.user-profile a:hover { opacity: 1;   }
+.user-profile a:active{ opacity: 0.2; }
+
+.user-name:hover::before
+{
+  content: url('../img/icon-user.svg');
+  vertical-align: middle;
+  padding-right: 14px;
+  opacity: 1;
+}
+
+.user-logout       { opacity: 0.5; }
+.user-logout:hover { opacity: 1;   }
+.user-logout:active{ opacity: 0.2; }
+
+
+.user-cabinet a
+{
+  text-decoration: underline solid;
+}
+
+.user-cabinet li,
+.user-cabinet a
+{
+  color: black;
+  background-color: inherit;
+}
+
+.user-cabinet a:hover { color: red; }
+.user-cabinet a:active{ color: black; opacity: 0.2; }

@@ -4,8 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Техномарт»</title>
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--
+    Fonts in 'style.css' not Google
+    -->
+    <link  href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link  href="css/style.css"     rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -24,30 +27,39 @@
           </div>
         </a>
 
-
-        <form class="search-form" action="/action_page.php" method="get">
-          <button type="submit">
-            <img src="img/icon-search.svg" alt="search"  height="10" width="12">
-            <span class="visually-hidden">Поиск</span>
-          </button>
-          <input type="text" placeholder="Поиск:" name="search">
-        </form>
-
-
+       
         <ul class="general-user-info">
-          <li><a class="user-bookmark" href="user-bookmark.html">
-              <img src="img/icon-bookmark.svg" alt="Закладки"  height="12" width="16">
+          
+          <li>
+            <form class="search-form" action="/action_page.php" method="get">
+              <span class="visually-hidden">Поиск</span>
+              <label class="icon-search" for="id-search">&nbsp;</label>
+              
+              <input class="inpt-search" id="id-search" type="search" placeholder="Поиск:" name="search">
+            </form>
+          </li>
+          
+          <li>
+            <a class="user-bookmark" href="user-bookmark.html">
               <span>Закладки:&nbsp;</span>
               <span>0</span>
-          </a></li>
-          <li><a class="user-korzina" href="user-korzina.html">
-             <img src="img/cart-icon.svg" alt="Корзина"  height="12" width="16">
+            </a>
+          </li>
+          
+          <li>
+            <a class="user-korzina" href="user-korzina.html">
+             <!--<img src="img/icon-cart_realy_SVG_1.svg" alt="Корзина"  height="15" width="15">-->
               <span>Корзина:&nbsp;</span>
               <span>0</span>
-          </a></li>
-          <li><a class="user-create-order" href="user-create-order.html">
+            </a>
+          </li>
+          
+          <li>
+            <a class="user-create-order" href="user-create-order.html">
               <span>Оформить заказ</span>
-          </a></li>
+            </a>
+          </li>
+          
         </ul>
 
       </section>
@@ -60,7 +72,7 @@
         </h1>
 
         <div class="short-company-info">
-          <aside class="full-name">
+          <aside class="full-name-company">
             <p>
               Интернет-магазин строительных материалов и инструментов для ремонта 
             </p>
@@ -69,23 +81,23 @@
           <section class="phone-address">
             <h3 class="visually-hidden">Наш телефон и Наш адрес</h3>
             <p class="phone">
-              <img src="img/icon-phone.svg" alt="Телефон магазина"  height="12" width="16">
               <span class="visually-hidden">Наш телефон</span>
-              +7 (812) 555-05-55
+              <img src="img/icon-phone.svg" alt="Телефон магазина"  height="12" width="16">
+              <span>+7 (812) 555-05-55</span>
             </p>
             <p class="post-address">
               <span class="visually-hidden">Наш адрес</span>
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+              <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
           </section>
 
           <section class="user-login-registration">
             <h3 class="visually-hidden">Вход и регистрация для посетителей</h3>
             <ul>
-              <li class="user-login">
-                <a href="user-login.html">
-                  <img src="img/icon-login.svg" alt="Вход для пользователя" height="12" width="16">
-                  Войти
+              
+              <li>
+                <a class="user-login" href="user-login.html">
+                  <span>Войти</span>
                 </a>
               </li>
 
@@ -94,6 +106,7 @@
                   Регистрация
                 </a>
               </li>
+              
             </ul>
           </section>
           
@@ -116,7 +129,7 @@
 
 
     <main class="container">
-
+      КОНТЕНТ
       <section>
         <h2 class="visually-hidden">Мы предлагаем</h2>
       </section>
@@ -188,13 +201,86 @@
           <img src="img/map.jpg" width="780"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
-      </section>
-      
+      </section>      
 
     </main>
+    
 
-    <footer class="footer">
-      ФУТЕР
+    <footer class="main-footer">
+      
+      <section class="review-company">
+        <h2 class="visually-hidden">Вся информация о нвшей компании</h2>
+        
+        <section>
+
+          <h3 class="visually-hidden">Логотип компании</h3>
+
+          <a class="company-logo"  href="index.html">
+            <div>
+              <img src="img/logo-technomart.svg"
+                   alt="Логотип интернет-магазин Техномарт" height="18" width="110">
+            </div>
+          </a>
+          
+        </section>
+        
+        <section class="phone-address">
+          
+          <h3 class="visually-hidden">Наш адрес и Наш телефон</h3>
+          
+          <p class="post-address">
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+            <span>+7 (812) 555-05-55</span>
+          </p>
+          
+        </section>
+
+        <nav class="site-navigation">
+          <ul>
+            <li class="li-wight"><a href="about.html">      Компания</a></li>
+            <li class="li-wight"><a href="news.html">       Новости</a></li>
+            <li class="li-wight"><a href="catalog.html">    Каталог</a></li>
+            <li class="li-wight"><a href="logistik.html">   Доставка</a></li>
+            <li class="li-wight"><a href="contacts.html">   Контакты</a></li>
+            <li class="li-gold" ><a href="materialy.html">  Материалы</a></li>
+            <li class="li-gold" ><a href="tehnika.html">    Техника</a></li>
+            <li class="li-gold" ><a href="instrumenty.html">Инструменты</a></li>
+            <li class="li-gold" ><a href="special.html">    Спецпредложения</a></li>
+          </ul>
+        </nav>        
+      </section>
+      
+      
+      <section class="copyright-soc-seti">
+        
+        <h2 class="visually-hidden">Копирайт и Мы в социальных сетях</h2>
+        
+        <!--        
+        <span> &#169; 2010-2017 Компания -Техномарт-<span>            
+        <span>Все права защищены</span>
+        -->
+        
+        <div class="copyright">
+          Копирайт 2010-2017 Компания -Техномарт- Все права защищены
+        </div>
+        
+        <div class="soc-seti">
+          <div class="vkontakte"></div>
+          <div class="facebook" ></div>
+          <div class="instagram"></div>
+        </div>
+        
+        
+        <a href="mail@htmlacademy.ru">
+          <span>Обратная связь:&nbsp;</span>
+        </a>
+        
+        <a href="htmlacademy.ru">
+          <span>Разработано -&nbsp;</span>
+        </a>
+        
+      </section>
+      
     </footer>
 
   </body>
