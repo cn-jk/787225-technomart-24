@@ -11,6 +11,7 @@
     <link  href="css/style.css"     rel="stylesheet" type="text/css">
     <link  href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   </head>
+  
   <body>
 
     <header class="big-header">
@@ -19,9 +20,7 @@
       <div class="core-header">
         
       <section class="logo-search-login-FlexBar">        
-        <h3 class="visually-hidden">
-          Логотип компании, Общий поиск по сайту, Логин
-        </h3>
+        <h3 class="visually-hidden">Логотип компании, Общий поиск по сайту, Логин</h3>
         
         <a href="index.html">
           <div class="company-logo">
@@ -31,28 +30,32 @@
         </a>
         
         <form id="id-search-form" class="div--form search-form" action="https://echo.htmlacademy.ru" method="get">
-          <span class="visually-hidden">Поиск</span>
+          <span  class="visually-hidden">Поиск</span>
           <label class="icon-search" for="id-search">&nbsp;</label>
-          <input oninput="fun_ChangeColor_2('id-search-form')" class="inpt-search" id="id-search" type="search" placeholder="Поиск:" name="search">
+          <input
+          onfocus="fun_ChangeColor_3('id-search-form')"
+          onblur ="fun_ChangeColor_4('id-search-form')"
+          class="inpt-search" id="id-search" type="search" placeholder="Поиск:" name="search">
         </form>
-
-        <div class="div--item" id="id-userBookmark">
-          <a class="user-bookmark" href="#"><span>Закладки:&nbsp;</span></a>
-          <input
-          oninput="fun_ChangeColor('id-userBookmark')" class="user-number-color" type="number" size="3" value="50" name="nm-user-bookmark">
-        </div>
-
-        <div  class="div--item" id="id-userKorzina">
-          <a class="user-korzina" href="#"><span>Корзина:&nbsp;</span></a>
-          <input
-          oninput="fun_ChangeColor('id-userKorzina')" class="user-number-color" type="number" size="3" value="0">
-        </div>         
-
+        
+        <a class="div--item user-bookmark" id="id-userBookmark" href="#">
+            <div class="icon-bookmark"></div>
+            <span>Закладки:&nbsp;</span>
+            <span class="tag-number">0</span>
+        </a>
+        
+        <a class="div--item user-korzina" id="id-userKorzina" href="#">
+            <div class="icon-korzina"></div>
+            <span>Корзина:&nbsp;</span>
+            <span class="tag-number">10</span>            
+        </a>
+        
         <a class="green-button" href="#">
           <div  class="div--item green-button">
             <span>Оформить заказ</span>
           </div>            
         </a>
+        
       </section>
         
 
@@ -73,11 +76,11 @@
 
           <section class="phone-address">
             <h3 class="visually-hidden">Наш телефон и Наш адрес</h3>
-            <p class="phone">
+            <div class="phone">
               <span class="visually-hidden">Наш телефон</span>
-              <img  src="img/icon-phone.svg" alt="Телефон магазина"  height="19">
+              <div class="icon-phone"></div>
               <span>+7 (812) 555-05-55</span>
-            </p>
+            </div>
             <address class="addressPost-header">
               <span class="visually-hidden">Наш адрес</span>
               <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -90,6 +93,7 @@
             <ul class="user-profile">              
               <li>
                 <a class="user-name" href="#">
+                  <div class="icon-user-name"></div>
                   <span>Равшан Джамшутович</span>
                 </a>
               </li>
@@ -319,7 +323,10 @@
             <div class="show-new-label-red"></div>            
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>              
               <img class="product-image" src="img/BFG-3000-tran.png" alt="Перфоратор BOSCH BFG 3000">
@@ -336,7 +343,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>              
               <img class="product-image" src="img/BFG-6000-tran.png" alt="Перфоратор BOSCH BFG 6000">
@@ -354,7 +364,10 @@
             <div class="show-new-label-red"></div>            
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>              
               <img class="product-image" src="img/BFG-2000-tran.png" alt="Перфоратор BOSCH BFG 2000">
@@ -371,7 +384,10 @@
             <div class="show-new-label-red"></div>            
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>              
               <img class="product-image" src="img/BFG-3000-tran.png" alt="Перфоратор BOSCH BFG 3000">
@@ -388,7 +404,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>
               <img class="product-image" src="img/BFG-6000-tran.png" alt="Перфоратор BOSCH BFG 6000">
@@ -405,7 +424,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>
               <img class="product-image" src="img/BFG-2000-tran.png" alt="Перфоратор BOSCH BFG 2000">
@@ -422,7 +444,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-3000-tran.png" alt="Перфоратор BOSCH BFG 3000">
@@ -439,7 +464,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-6000-tran.png" alt="Перфоратор BOSCH BFG 6000">
@@ -456,7 +484,10 @@
             <div class="show-new-label-red"></div>
             <aside class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">Купить</button>
+                <button class="sale-button green-button">
+                  <span class="icon-sale"></span>
+                  <span class="text-sale">Купить</span>
+                </button>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-2000-tran.png" alt="Перфоратор BOSCH BFG 2000">
@@ -582,7 +613,7 @@
           </div>        
 
           <div class="display-inline-design">
-          <a href="https://htmlacademy.ru/">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
             <span>Разработано --&nbsp;</span>
           </a>
           </div>
