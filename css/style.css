@@ -8,7 +8,8 @@ body   /*====================================================================*/
   justify-content: flex-start;
   align-items: center;
   
-  font-family: Cuprum, PT-Sans, 'PT Sans Narrow', Arial, sans-serif;
+  /*font-family: Cuprum, 'PT Sans', PT-Sans, Arial, sans-serif;*/
+  font-family: Cuprum, 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 24px;
   text-transform: uppercase;
@@ -29,9 +30,7 @@ a  {  text-decoration: none;  }
   justify-content: flex-start;
   align-items: center;
   
-  width: 100%;  height: 320px;
-  /*width: 940px;*/
-  /*width: 1200px;*/  
+  width: 100%;  height: 320px;  /*width: 940px;*/  /*width: 1200px;*/  
   
   background-color: #f3f7f8;
   box-sizing: border-box;
@@ -46,8 +45,8 @@ a  {  text-decoration: none;  }
   top: 0; left: 0;
   z-index: 0;
   width: 100%;  height: 42px;  
-  /*background-color: #293449;*/
-  background-color: #32425c;
+  
+  background-color: #32425c;  /*background-color: #293449;*/
 }
 
 .core-header   /*============================================================*/
@@ -234,59 +233,52 @@ AHTUNG! ===============================
 V Chrome, NO working !!! ZARABOTALO -- pomenial poriadok pravil sm. stroki 72-85
                        ================
 */
-.inpt-search::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #eee;
-  /*color: #aaa;*/
-  /*opacity: 1;  Firefox */
-}
 
-.inpt-search:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #eee;
-}
+ /* Chrome, Firefox, Opera, Safari 10.1+ */
+.inpt-search::placeholder               {  color: #eee; }
 
-.inpt-search::-webkit-input-placeholder { /* Edge */
-  color: #eee;
-}
+ /* Internet Explorer 10-11 */
+.inpt-search:-ms-input-placeholder      {  color: #eee; }
 
-.inpt-search::-ms-input-placeholder { /* Microsoft Edge */
-  color: #eee;
-}
+/* Edge */
+.inpt-search::-webkit-input-placeholder {  color: #eee; }
+
+/* Microsoft Edge */
+.inpt-search::-ms-input-placeholder     {  color: #eee; }
 
 /*
 AHTUNG! ===============================
 V Chrome, NO working !!! ZARABOTALO -- pomenial poriadok pravil sm. stroki 72-85
                        ================
 */
-:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
 /*.inpt-search:hover::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1; /* Firefox */
-}
 
-:hover::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+ /* Firefox */
+:hover::placeholder {  color: #fff;  opacity: 1; }
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
 /*.inpt-search:hover::placeholder {  Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-}
+:hover::placeholder {   color: #fff; }
 
-.inpt-search:hover:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #fff;
-}
+ /* Internet Explorer 10-11 */
+.inpt-search:hover:-ms-input-placeholder {  color: #fff; }
 
-.inpt-search:hover::-ms-input-placeholder { /* Microsoft Edge */
-  color: #fff;
-}
+ /* Microsoft Edge */
+.inpt-search:hover::-ms-input-placeholder { color: #fff; }
 
 
-input[type=number]::-webkit-outer-spin-button,  /* ==========================================================*/
+input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button
 {
     -webkit-appearance: none;
      margin: 0;
 }
 
-input[type=number] {
-    -moz-appearance:textfield;
-}
+
+input[type=number] { -moz-appearance:textfield; }
+
 
 .user-number-color
 {
@@ -476,7 +468,6 @@ margin-left: 50px;
 }
 
 
-
 .user-login-registration  /* =============================================== */
 {
   width: 280px;
@@ -571,93 +562,62 @@ margin-left: 50px;
 .company-logo:hover { background: #ca2c37; }
 .company-logo:active{ background-color: #ba2732; }
 
-
+/*
+    Lekcia-5 === Zadanie-12 === Punkt 01 === modal-section unvisible !
+*/ 
   .modal
- ,.visually-hidden
-  {    
-    /*
-        Lekcia-5 === Zadanie-12 === Punkt 01 === modal-section unvisible !
-    */ 
-    display: none;
-  }
+ ,.visually-hidden  { display: none; }
   
   
-  /*
-  FONT RULE   ===  "Cuprum"
-  */  
+  /*  FONT RULE   ===  "Cuprum"  */  
   
-  @font-face {
+  @font-face
+  {
   font-family: Cuprum;
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bold-webfont.woff2')             format('woff2');
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bold-webfont.woff')              format('woff');
-  font-weight: bold;
-  font-style:  bold;
+  src: url('../fonts/CP/cuprum.woff2') format('woff2'), url('../fonts/CP/cuprum.woff') format('woff');
+  font-weight: 400;
+  font-style:  normal;
   }
   
   @font-face {
   font-family: Cuprum;
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-italic-webfont.woff2')           format('woff2');
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-italic-webfont.woff')            format('woff');
-  font-weight: italic;
+  src: url('../fonts/CP/cuprumbold.woff2') format('woff2'), url('../fonts/CP/cuprumbold.woff') format('woff');
+  font-weight: 700;
+  font-style:  normal;
+  }
+  
+  @font-face {
+  font-family: Cuprum;
+  src: url('../fonts/CP/cuprumitalic.woff2') format('woff2'), url('../fonts/CP/cuprumitalic.woff') format('woff');
+  font-weight: 400;
   font-style:  italic;
   }
   
   @font-face {
   font-family: Cuprum;
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bolditalic-webfont.woff2')       format('woff2');
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-bolditalic-webfont.woff')        format('woff');
-  font-weight: bolditalic;
-  font-style:  bolditalic;
+  src: url('../fonts/CP/cuprumbolditalic.woff2') format('woff2'), url('../fonts/CP/cuprumbolditalic.woff') format('woff');
+  font-weight: 700;
+  font-style:  italic;
   }
   
-  @font-face {
-  font-family: Cuprum;
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-regular-webfont.woff2')          format('woff2');
-  src: url('../fonts/Font_Cuprum_WOFF/cuprum-regular-webfont.woff')           format('woff');
-  font-weight: normal;
-  font-style:  normal;
-  }
     
-  /*
-  FONT RULE ===  "PT-Sans"
+  /*  FONT RULE ===  "PT-Sans"  *//*=========================================*/
   
-  ! Generated by Font Squirrel (https://www.fontsquirrel.com) on February 12, 2019
-  */  
-  
-  @font-face {
-  font-family: 'PT-Sans';
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bold-webfont.woff2') format('woff2'),
-       url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bold-webfont.woff')  format('woff');
-  font-weight: normal;
-  font-style:  normal;
-/*  font-weight: bold;
-  font-style:  bold;*/
-  }
-  
-  @font-face {
-  font-family: 'PT-Sans';
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-italic-webfont.woff2') format('woff2');
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-italic-webfont.woff')  format('woff');
-  font-weight: italic;
-  font-style:  italic;
-  }
-  
-  @font-face {
-  font-family: 'PT-Sans';
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bolditalic-webfont.woff2') format('woff2');
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-bolditalic-webfont.woff')  format('woff');
-  font-weight: bolditalic;
-  font-style:  bolditalic;
-  }
-  
-  @font-face {
-  font-family: 'PT-Sans';
-  src: url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-regular-webfont.woff2') format('woff2'),
-       url('../fonts/Font_Pt-Sans_WOFF/pt_sans-web-regular-webfont.woff')  format('woff');
-  font-weight: normal;
-  font-style:  normal;
-  }
-  
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PT/ptsans.woff2') format('woff2'),
+         url('../fonts/PT/ptsans.woff')  format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url('../fonts/PT/ptsansbold.woff2') format('woff2'),
+         url('../fonts/PT/ptsansbold.woff')  format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /*=========================================================*/
 
 .navbar-box
@@ -1560,7 +1520,7 @@ footer .company-logo
   
   width: 100%;
 
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-weight: bold;
   font-size:   17px;
   line-height: 20px;
@@ -1769,7 +1729,7 @@ footer .company-logo
   margin: 0; padding: 0; margin-top: 45px;
   
   display: flex; justify-content: space-between; align-items: center;
-  font-family: PT-Sans; font-size: 13px;
+  font-family: 'PT Sans'; font-size: 13px;
 }
 
 .pagination a
@@ -1848,7 +1808,7 @@ footer .company-logo
 .services-delivery pre,
 .product-description pre
 {
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-size: 13px;
   line-height: 1.85;
   
@@ -2010,7 +1970,7 @@ footer .company-logo
 .about-our-company pre:nth-child(3),
 .contacts-our-company pre
 {
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-size: 13px;
   line-height: 1.85;
   text-transform: none;
@@ -2048,7 +2008,7 @@ display: inline; float: right;
   color: black;
   background-color: white;
   
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-size: 13px;
   /*text-transform: uppercase;*/  
 }
@@ -2057,7 +2017,7 @@ display: inline; float: right;
 {
   color: black;
   background-color: inherit;
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   text-transform: uppercase;  
 }
 
@@ -2277,7 +2237,7 @@ display: inline; float: right;
   background-color: #fff;
   
   font-size: 13px;
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   text-transform: uppercase;
 }
 
@@ -2286,7 +2246,7 @@ display: inline; float: right;
   color: black;
   background-color: #f9f5f0;
   
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-size: 13px;  
   text-transform: uppercase;
   
@@ -2357,7 +2317,7 @@ display: inline; float: right;
   
   position: relative;
 
-  font-family: PT-Sans;
+  font-family: 'PT Sans';
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
@@ -2429,9 +2389,9 @@ display: inline; float: right;
   width: 620px;  height: 280px;
   box-sizing: border-box;
   
-  background-image: url('../img/pattern-light.jpg');
+/* background-image: url('../img/pattern-light.jpg');
   background-repeat: no-repeat;  
-  background-position: 0 0;
+  background-position: 0 0;*/
   
   padding: 0;
   margin: 0;
@@ -2453,7 +2413,8 @@ display: inline; float: right;
   
   font-size: 0;  
   cursor: pointer;
-  background-color: inherit;
+  /*background-color: inherit;*/
+  background-color: transparent;
   border: none;
   outline: none;
 }
