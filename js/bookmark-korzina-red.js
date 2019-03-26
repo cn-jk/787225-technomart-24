@@ -15,7 +15,7 @@ for ( var i = 0; i < node_Link.length; i++ )
 
 //  fun_ChangeColor_2('id-search-form');
 
-// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+// :::::::::::::::::::::::::
 
 function fun_ChangeColor( id_element )
 {

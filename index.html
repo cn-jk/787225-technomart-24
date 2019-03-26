@@ -3,6 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>Интернет-магазин «Техномарт»</title>
     <!--
     Fonts in 'style.css' not Google
@@ -68,11 +69,7 @@
 
         <div class="short-company-info">
           <aside class="full-name-company">
-<pre>
-Интернет-магазин
-строительных материалов
-и инструментов для ремонта 
-</pre>
+            <p>Интернет-магазин строительных&nbsp;материалов и&nbsp;инструментов&nbsp;для&nbsp;ремонта </p>
           </aside>
 
           <section class="phone-address">
@@ -80,7 +77,8 @@
             <div class="phone">
               <span class="visually-hidden">Наш телефон</span>
               <div class="icon-phone"></div>
-              <span>+7 (812) 555-05-55</span>
+              <span>+7&nbsp;(812)&nbsp;555-05-55</span>
+              <!--<span>+7 (812) 555-05-55</span>-->
             </div>
             <address class="addressPost-header">
               <span class="visually-hidden">Наш адрес</span>
@@ -136,53 +134,44 @@
         <h2 class="visually-hidden">Мы предлагаем</h2>
           
         <div class="proposal-panel-relative color-gold new-label-red">
+              <div class="show-new-label-red"></div>
               <aside class="proposal-panel-absolute">
                   <div class="proposal-panel-box">
-                          <p class="proposal-panel-title">
-                            Материалы
-                          </p>
+                          <p class="proposal-panel-title">Материалы</p>
 
-                          <button class="proposal-panel-button">
-                            На любой вкус
-                          </button>
+                          <a class="proposal-panel-button" href="#">На любой вкус</a>
                   </div>
-                  <div class="proposal-panel-img">
-                    <img src="img/icon-1.svg" alt="material" width="65" height="65">
-                  </div>
+                  <!--<div class="proposal-panel-img">-->
+                  <img class="proposal-panel-img" src="img/icon-1.svg" alt="material" width="60" height="65">
+                  <!--</div>-->
               </aside>
         </div>
         
         <div class="proposal-panel-relative color-skyblue">
+              <div class="show-new-label-red"></div>
               <aside class="proposal-panel-absolute">
                   <div class="proposal-panel-box">
-                          <p class="proposal-panel-title">
-                            Инструменты
-                          </p>
+                          <p class="proposal-panel-title">Инструменты</p>
 
-                          <button class="proposal-panel-button">
-                            На все случаи
-                          </button>
+                          <a class="proposal-panel-button" href="#">На все случаи</a>
                   </div>
-                  <div class="proposal-panel-img">
-                          <img src="img/icon-2.svg" alt="instrument" width="65" height="65">
-                  </div>
+                  <!--<div class="proposal-panel-img">-->
+                  <img class="proposal-panel-img" src="img/icon-2.svg" alt="instrument" width="60" height="65">
+                  <!--</div>-->
               </aside>
         </div>
         
         <div class="proposal-panel-relative color-fiolet">
+              <div class="show-new-label-red"></div>
               <aside class="proposal-panel-absolute">
                   <div class="proposal-panel-box">
-                          <p class="proposal-panel-title">
-                            Техника
-                          </p>
+                          <p class="proposal-panel-title">Техника</p>
 
-                          <button class="proposal-panel-button">
-                            Для стройки
-                          </button>
+                          <a class="proposal-panel-button" href="#">Для стройки</a>
                   </div>
-                  <div class="proposal-panel-img">
-                          <img src="img/icon-3.svg" alt="technik" width="65" height="65">
-                  </div>
+                  <!--<div class="proposal-panel-img">-->
+                  <img class="proposal-panel-img" src="img/icon-3.svg" alt="technik" width="60" height="65">
+                  <!--</div>-->
               </aside>
         </div>
         
@@ -197,7 +186,7 @@
 
                   <p  class="foto-gallery-panel-comment">Соседям на радость!</p>
                 </div>
-                <img src="img/layer-9-9.jpg"   alt="ДРЕЛИ"       width="620" height="260">
+                <img src="img/layer-9-9.jpg" alt="ДРЕЛИ" width="620" height="260">
           </div>
           
           <div class="foto-image">
@@ -206,7 +195,7 @@
 
                   <p  class="foto-gallery-panel-comment">Настоящие мужские игрушки</p>
                 </div>
-          <img src="img/layer-99.jpg" alt="ПЕРФОРАТОРЫ" width="620" height="260">
+                <img src="img/layer-99.jpg" alt="ПЕРФОРАТОРЫ" width="620" height="260">
           </div>
 
           <aside class="foto-gallery-absolute-box">
@@ -222,48 +211,47 @@
           </button>
           </div>
             
-          <form>
-          <button class="red-button red-button-short" type="submit" formaction="catalog.html">
-            Открыть каталог
-          </button>
-          </form>
-            
+            <div class="frm-button-dot-panel">
+              <a class="red-button red-button-short" href="catalog.html">
+                Открыть&nbsp;каталог
+              </a>
+
+              <div class="frm-dot-dot-panel">
+                <span onclick="currentDivs(1)" class="dot"></span>
+                <span onclick="currentDivs(2)" class="dot"></span>
+            </div>
+          </div>         
+          
           </aside>
         </section>        
         
         <div class="proposal-div-flex-2">
 
           <div class="proposal-panel-relative color-lightolive">
+                <div class="show-new-label-red"></div>
                 <aside class="proposal-panel-absolute">
                     <div class="proposal-panel-box">
-                            <p class="proposal-panel-title">
-                              Скидки 50%
-                            </p>
+                            <p class="proposal-panel-title">Скидки 50%</p>
 
-                            <button class="proposal-panel-button">
-                              На 350 товаров
-                            </button>
+                            <a class="proposal-panel-button" href="#">На 350 товаров</a>
                     </div>
-                    <div class="proposal-panel-img">
-                            <img src="img/icon-4.svg" alt="discount" width="65" height="65">
-                    </div>
+                    <!--<div class="proposal-panel-img">-->
+                    <img class="proposal-panel-img" src="img/icon-4.svg" alt="discount" width="60" height="65">
+                    <!--</div>-->
                 </aside>
           </div>
 
           <div class="proposal-panel-relative color-lightorange">
+                <div class="show-new-label-red"></div>
                 <aside class="proposal-panel-absolute">
                     <div class="proposal-panel-box">
-                            <p class="proposal-panel-title">
-                              Доставка
-                            </p>
+                            <p class="proposal-panel-title">Доставка</p>
 
-                            <button class="proposal-panel-button">
-                              Бесплатно
-                            </button>
+                            <a class="proposal-panel-button" href="#">Бесплатно</a>
                     </div>
-                    <div class="proposal-panel-img">
-                            <img src="img/icon-5.svg" alt="delivery" width="65" height="65">
-                    </div>
+                    <!--<div class="proposal-panel-img">-->
+                    <img class="proposal-panel-img" src="img/icon-5.svg" alt="delivery" width="60" height="65">
+                    <!--</div>-->
                 </aside>
           </div>
         </div>
@@ -275,12 +263,10 @@
         <h2 class="visually-hidden">товары каталог</h2>
         
         <div class="title-section">
-            <span class="txt-title-section">
-              Популярные товары:
-            </span>
-            <button class="red-button red-button-normal">
+            <h3 class="txt-title-section">Популярные товары:</h3>
+            <a class="red-button red-button-normal" href="#">
               <span>Все популярные товары</span>
-            </button>
+            </a>
         </div>
         
         <div class="products-list">
@@ -288,81 +274,77 @@
           <section  class="product-card">
             <h4 class="visually-hidden">Перфоратор BOSCH BFG 9000</h4>            
             <div class="show-new-label-red"></div>            
-            <aside class="image-or-action">
+            <div class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">
-                  <span class="icon-sale"></span>
-                  <span class="text-sale">Купить</span>
-                </button>
+                <a class="sale-button green-button" href="#">
+                  <span class="icon-sale"></span><span class="text-sale">Купить</span>
+                </a>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-9000-tran.png" alt="Перфоратор BOSCH BFG 9000">
-            </aside>
-            <table class="table-product-card">            
-              <tr><th class="product-model-name">Перфоратор BOSCH<br>BFG 9000</th></tr>            
-              <tr><td class="old-price-product" >32500 Р.</td></tr>            
-              <tr><td class="new-price-product" >25500 Р.</td></tr>            
-            </table>            
+            </div>
+            <div class="table-product-card">            
+              <span class="product-model-name">Перфоратор&nbsp;BOSCH BFG&nbsp;9000</span>            
+              <span class="old-price-product" >32500 Р.</span>            
+              <span class="new-price-product" >25500 Р.</span>            
+            </div>            
           </section>
           
           <section  class="product-card">
             <h4 class="visually-hidden">Перфоратор BOSCH BFG 3000</h4>            
             <div class="show-new-label-red"></div>            
-            <aside class="image-or-action">
+            <div class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">
-                  <span class="icon-sale"></span>
-                  <span class="text-sale">Купить</span>
-                </button>
+                <a class="sale-button green-button" href="#">
+                  <span class="icon-sale"></span><span class="text-sale">Купить</span>
+                </a>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-3000-tran.png" alt="Перфоратор BOSCH BFG 3000">
-            </aside>            
-            <table class="table-product-card">            
-              <tr><th class="product-model-name">Перфоратор BOSCH<br>BFG 3000</th></tr>            
-              <tr><td class="old-price-product" >22500 Р.</td></tr>            
-              <tr><td class="new-price-product" >15500 Р.</td></tr>            
-            </table>            
+            </div>            
+            <div class="table-product-card">            
+              <span class="product-model-name">Перфоратор&nbsp;BOSCH BFG&nbsp;3000</span>            
+              <span class="old-price-product" >22500 Р.</span>            
+              <span class="new-price-product" >15500 Р.</span>            
+            </div>            
           </section>
           
           <section  class="product-card">
             <h4 class="visually-hidden">Перфоратор BOSCH BFG 6000</h4>            
             <div class="show-new-label-red"></div>            
-            <aside class="image-or-action">
+            <div class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">
-                  <span class="icon-sale"></span>
-                  <span class="text-sale">Купить</span>
-                </button>
+                <a class="sale-button green-button" href="#">
+                  <span class="icon-sale"></span><span class="text-sale">Купить</span>
+                </a>
                 <button class="bookmark-button">В закладки</button>
               </div>
-            <img class="product-image" src="img/BFG-6000-tran.png" alt="Перфоратор BOSCH BFG 6000">
-            </aside>            
-            <table class="table-product-card">            
-              <tr><th class="product-model-name">Перфоратор BOSCH<br>BFG 6000</th></tr>            
-              <tr><td class="old-price-product" >30500 Р.</td></tr>            
-              <tr><td class="new-price-product" >25500 Р.</td></tr>            
-            </table>
+              <img class="product-image" src="img/BFG-6000-tran.png" alt="Перфоратор BOSCH BFG 6000">
+            </div>            
+            <div class="table-product-card">            
+              <span class="product-model-name">Перфоратор&nbsp;BOSCH BFG&nbsp;6000</span>            
+              <span class="old-price-product" >30500 Р.</span>            
+              <span class="new-price-product" >25500 Р.</span>            
+            </div>
           </section>
           
           <section class="product-card new-label-red">
             <h4 class="visually-hidden">Перфоратор BOSCH BFG 2000</h4>
             <div class="show-new-label-red"></div>            
-            <aside class="image-or-action">
+            <div class="image-or-action">
               <div class="actions-user">              
-                <button class="sale-button green-button">
-                  <span class="icon-sale"></span>
-                  <span class="text-sale">Купить</span>
-                </button>
+                <a class="sale-button green-button" href="#">
+                  <span class="icon-sale"></span><span class="text-sale">Купить</span>
+                </a>
                 <button class="bookmark-button">В закладки</button>
               </div>
             <img class="product-image" src="img/BFG-2000-tran.png" alt="Перфоратор BOSCH BFG 2000">
-            </aside>
-            <table class="table-product-card">            
-              <tr><th class="product-model-name">Перфоратор BOSCH<br>BFG 2000</th></tr>            
-              <tr><td class="old-price-product" >12500 Р.</td></tr>            
-              <tr><td class="new-price-product" >12500 Р.</td></tr>            
-            </table>
+            </div>
+            <div class="table-product-card">            
+              <span class="product-model-name">Перфоратор&nbsp;BOSCH BFG&nbsp;2000</span>            
+              <span class="old-price-product" >12500 Р.</span>            
+              <span class="new-price-product" >12500 Р.</span>            
+            </div>
           </section>
           
         </div>
@@ -373,13 +355,10 @@
         <h2 class="visually-hidden">производители каталог</h2>
         
         <div class="title-section">
-          <span class="txt-title-section">
-            Популярные производители:
-          </span>
-          <button class="red-button red-button-normal">
-          <!--<button class="button-title-section">-->
+          <h3 class="txt-title-section">Популярные производители:</h3>
+          <a class="red-button red-button-normal" href="#">
             <span>Все производители</span>
-          </button>
+          </a>
         </div>
         
         <div class="brands-list">
@@ -399,38 +378,40 @@
       
       <section class="services-delivery">
         <h2 class="visually-hidden">подробнее о сервисах и доставке</h2>
-          
-          <div style="width: 940px;">
-            <p>Сервисы</p>
-<pre>
-Хороший интернет-магазин отличается от плохого не только ценами!
-Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-</pre>
-        </div>
+       
+          <aside style="width: 50%; margin:0; margin-top:40px;">
+            
+            <h3 class="txt-title-section">Сервисы</h3>
+            <p class="text-PT13-p-pre">
+            Хороший&nbsp;интернет-магазин&nbsp;отличается&nbsp;от&nbsp;плохого&nbsp;не&nbsp;только&nbsp;ценами!
+            Мы&nbsp;стараемся&nbsp;изо&nbsp;всех&nbsp;сил,&nbsp;чтобы&nbsp;сделать&nbsp;ваши&nbsp;покупки&nbsp;приятными.
+            </p>
+            
+          </aside>
         
-        <br>        
+          <div class="services-delivery-details">
 
-        <div class="services-delivery-details">
-          
-          <div class="services-delivery-menu">
-            
-            <ul>
-              <li><a class="active" href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит  </a></li>
-            </ul>
-            
-            <div  class="services-delivery-dekoration">
-              <img src="img/layer-118-copy.png" alt="Vertical-Shadow-dekor">
+            <div class="services-delivery-menu">
+
+              <ul class="services-slideshow">
+                <li onclick="renewServcs(1)" class="active-item-service">Доставка</li>
+                <li onclick="renewServcs(2)" class="item-service">Гарантия</li>
+                <li onclick="renewServcs(3)" class="item-service">Кредит  </li>
+<!--                <li onclick="currentServcs(1)"><a class="our-services active-service" href="#">Доставка</a></li>
+                <li onclick="currentServcs(2)"><a class="our-services"        href="#">Гарантия</a></li>
+                <li onclick="currentServcs(3)"><a class="our-services"        href="#">Кредит  </a></li>-->
+              </ul>
+
+              <div  class="services-delivery-dekoration">
+                <img src="img/layer-118-copy.png" alt="Vertical-Shadow-dekor">
+              </div>
             </div>
-          </div>
 
 <!--:::::::::::::::::::::::::::::-->
-<div class="services-foto-image">
+<div class="services-slide" style="display: none;">
           <div class="services-delivery-text">
-            <p style="font-size: 36px;">Доставка</p>
-            
-<pre>
+            <p style="font-size: 36px; margin: 30px 0;">Доставка</p>            
+<pre class="text-PT13-p-pre" style="margin: 0;">
 Мы с удовольствием доставим ваш товар прямо
 к вашему подъезду совершенно бесплатно!
 Ведь мы неплохо заработаем,
@@ -438,17 +419,15 @@
 </pre>
           </div>
 
-
           <div class="services-delivery-image">            
-            <img src="img/layer-138.png" alt="Auto-furgon">
+            <img src="img/layer-138.png" alt="Auto-furgon" width="465" height="260">
           </div>
 </div>
 <!--:::::::::::::::::::::::::::::-->          
-<div class="services-foto-image" style="display: none;">
+<div class="services-slide" style="display: none;">
           <div class="services-delivery-text">
-            <p style="font-size: 36px;">Гарантия</p>
-            
-<pre>
+            <p style="font-size: 36px; margin: 30px 0;">Гарантия</p>            
+<pre class="text-PT13-p-pre">
 Если купленный у нас товар поломается или заискрит,
 а также в случае пожара, спровоцированного его возгаранием,
 вы всегда можете быть уверены в нашей гарантии. Мы обменяем
@@ -457,29 +436,25 @@
 </pre>
           </div>
 
-
           <div class="services-delivery-image">            
-            <img src="img/layer-137.png" alt="Auto-furgon">
+            <img src="img/layer-137.png" alt="Auto-furgon" width="465" height="260">
           </div>
 </div>
 <!--:::::::::::::::::::::::::::::-->          
-<div class="services-foto-image" style="display: none;">
+<div class="services-slide">
           <div class="services-delivery-text">
-            <p style="font-size: 36px;">Кредит</p>
-            
-<pre>
+            <p style="font-size: 36px; margin: 30px 0;">Кредит</p>            
+            <pre class="text-PT13-p-pre" style="margin-bottom: 45px;">
 Залезть в долговую яму стало проще!
 Кредитные консультанты придут к вам на помощь.
 </pre>
-              <button class="red-button red-button-short">
+            <a class="red-button red-button-short" href="#">
                 <span>Отправить заявку</span>
-              </button>
-            
+            </a>            
           </div>
 
-
           <div class="services-delivery-image">            
-            <img src="img/layer-136.png" alt="Auto-furgon">
+            <img src="img/layer-136.png" alt="Auto-furgon" width="465" height="260">
           </div>
 </div>
 <!--:::::::::::::::::::::::::::::-->          
@@ -492,46 +467,27 @@
         <h2 class="visually-hidden">подробнее о компании и контакты</h2>
           
         <section class="about-our-company">
-          <h4 class="visually-hidden">Компания «Техномарт»</h4>
-          
-          <p>Компания «Техномарт»</p>
-<pre>              
-Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
+          <h3 class="txt-title-section" style="margin-top:0;">Компания «Техномарт»</h3>
+<pre class="text-PT13-p-pre">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
 строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 
 Мы можем доставить товар в самые отдалённые точки России.
-Техномарт работает со многими транспортными компаниями:
-</pre>
+Техномарт работает со многими транспортными компаниями:</pre>
 
-<pre>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;Деловые линии
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;Автотрейдинг
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;ЖелДорЭкспедиция
-</pre>
+          <p class="before-minus text-CP18-p-pre" style="padding-left: 35px;">Деловые линии</p>
+          <p class="before-minus text-CP18-p-pre" style="padding-left: 35px;">Автотрейдинг</p>
+          <p class="before-minus text-CP18-p-pre" style="padding-left: 35px;">ЖелДорЭкспедиция</p>
 
-          <div  class="href-button" style="margin-top: 44px;">
-              <button class="red-button red-button-short">
-                <span>Подробнее о компании</span>
-              </button>
-            <!--
-            <a  href="#"
-            style="box-sizing: border-box; border-radius: 3px;
-            padding:12px 40px; background-color: red;
-            color: white; font-size: 14px;">
-            Подробнее о компании
-            </a>
-            -->
-          </div>
+          <a class="red-button red-button-short" style="margin-top: 39px;" href="#">
+              <span>Подробнее о компании</span>
+          </a>          
         </section>
           
           
         <section class="contacts-our-company">
-            <h4 class="visually-hidden">Контакты</h4>
-            <p>Контакты</p>
-<pre>            
-Вы можете забрать товар сами,
-заехав в наш офис:
-</pre>
+            <h3 class="txt-title-section" style="margin-top:0;">Контакты</h3>
+            
+            <p class="text-PT13-p-pre">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
 
             <div class="map-email">
 
@@ -539,13 +495,13 @@
                 <img src="img/5.png" alt="KapTa-St-Pitersburg" width="300" height="155">            
               </a>
               
-              <button class="red-button red-button-long write-email-letter">
+              <a class="red-button red-button-long write-email-letter">
                 <span>Заблудились? Напишите нам!</span>
-              </button>
+              </a>
 
-            </div>
-            
+            </div>            
           </section>
+        
       </section>    
 
     </div>
@@ -579,7 +535,7 @@
             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </address>
           
-          <span>+7 (812) 555-05-55</span>          
+          <span>+7&nbsp;(812)&nbsp;555-05-55</span>          
         </section>
         </div>        
 
@@ -736,10 +692,10 @@
     
     
     <script src="js/modal-email-letter.js"> </script>
-    <script src="js/modal-map-popup.js">    </script>
-    <script src="js/modal-cart-plus.js">    </script>
-    <script src="js/foto-slider-index.js">  </script>
+    <!--<script src="js/modal-map-popup.js">    </script>-->
+    <!--<script src="js/modal-cart-plus.js">    </script>-->
     <script src="js/bookmark-korzina-red.js"></script>
+    <script src="js/foto-slider-index.js">  </script>
     
   </body>
 </html>

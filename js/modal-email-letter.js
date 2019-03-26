@@ -1,4 +1,4 @@
-// :::::::::::::::::::::::::
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 var link =     document.querySelector(".write-email-letter");
 var popup =    document.querySelector(".modal-email-letter");
@@ -29,6 +29,7 @@ catch (err)
 // :::::::::::::::::::::::::
   
 link.addEventListener("click",
+
 function (evt)
   {
     evt.preventDefault();
@@ -50,6 +51,7 @@ function (evt)
 // :::::::::::::::::::::::::
 
   close.addEventListener("click",
+  
   function (evt)
   { 
     evt.preventDefault();
@@ -60,6 +62,7 @@ function (evt)
 // :::::::::::::::::::::::::
 
   form.addEventListener("submit",
+  
   function (evt)
   {
     if (your_name_input.value && your_email_input.value && your_letter_textarea.value)
@@ -82,6 +85,7 @@ function (evt)
 // :::::::::::::::::::::::::
 
   window.addEventListener("keydown",
+  
   function (evt)
   {
     if (evt.keyCode === 27)
@@ -93,8 +97,7 @@ function (evt)
         popup.classList.remove("modal-error");
       }
     }
-  });
-  
+  });  
 // When the user clicks anywhere outside of the modal, close it
 //  window.onclick = function(evt)
 //  {
@@ -107,3 +110,58 @@ function (evt)
 //        popup.classList.remove("modal-error");
 //  }
 //  };
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::  
+
+var mapLink  = document.querySelector(".map-button");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+// :::::::::::::::::::::::::  
+
+mapLink.addEventListener( "click", function (evt) { evt.preventDefault(); mapPopup.classList.add("modal-show"); }); 
+mapClose.addEventListener("click", function (evt) { evt.preventDefault(); mapPopup.classList.remove("modal-show"); });
+
+// :::::::::::::::::::::::::  
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27)
+  {
+    if (mapPopup.classList.contains("modal-show"))
+    {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+var cartLink  =    document.querySelectorAll(".sale-button");
+var cartPopup =    document.querySelector(   ".modal-cart-plus");
+var cartClose =    cartPopup.querySelector(  ".modal-close");
+
+// :::::::::::::::::::::::::  
+
+for (i = 0; i < cartLink.length; i++)
+{
+  cartLink[i].addEventListener( "click", function (evt) { evt.preventDefault(); cartPopup.classList.add("modal-show"); });
+}
+
+// :::::::::::::::::::::::::  
+
+cartClose.addEventListener("click",      function (evt) { evt.preventDefault(); cartPopup.classList.remove("modal-show"); });
+
+// :::::::::::::::::::::::::  
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27)
+  {
+    if (cartPopup.classList.contains("modal-show"))
+    {
+      evt.preventDefault();
+      cartPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
